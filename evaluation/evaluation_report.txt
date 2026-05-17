@@ -1,0 +1,46 @@
+French Open 2026 - Model Evaluation Report
+=======================================================
+
+1. Accuracy by Year
+----------------------------------------
+  2010: accuracy=69.4%  ROC-AUC=0.768  n=1950
+  2011: accuracy=69.8%  ROC-AUC=0.778  n=2006
+  2012: accuracy=73.1%  ROC-AUC=0.815  n=1936
+  2013: accuracy=71.7%  ROC-AUC=0.796  n=1884
+  2014: accuracy=69.3%  ROC-AUC=0.781  n=1820
+  2015: accuracy=72.2%  ROC-AUC=0.798  n=1826
+  2016: accuracy=72.1%  ROC-AUC=0.802  n=1774
+  2017: accuracy=70.7%  ROC-AUC=0.788  n=1750
+  2018: accuracy=70.3%  ROC-AUC=0.773  n=1794
+  2019: accuracy=78.0%  ROC-AUC=0.860  n=1656
+  2020: accuracy=79.1%  ROC-AUC=0.876  n=828
+  2021: accuracy=74.2%  ROC-AUC=0.823  n=1644
+  2022: accuracy=77.5%  ROC-AUC=0.866  n=1654
+  2023: accuracy=74.9%  ROC-AUC=0.839  n=1802
+  2024: accuracy=75.2%  ROC-AUC=0.819  n=1960
+  2025: accuracy=73.9%  ROC-AUC=0.805  n=1640
+
+2. Calibration
+----------------------------------------
+  Mean calibration gap : 0.020
+  (0.00=perfect, >0.10=poor)
+
+3. ROC-AUC (test set 2024-2025)
+----------------------------------------
+  AUC : 0.8122
+
+4. Roland Garros Backtest
+----------------------------------------
+  2015: Novak Djokovic         (actual: Stan Wawrinka)  [MISSED]
+  2016: Novak Djokovic         (actual: Novak Djokovic)  [CORRECT]
+  2017: Novak Djokovic         (actual: Rafael Nadal)  [TOP 3]
+  2018: Novak Djokovic         (actual: Rafael Nadal)  [TOP 3]
+  2019: Novak Djokovic         (actual: Rafael Nadal)  [TOP 3]
+  2020: Jannik Sinner          (actual: Rafael Nadal)  [TOP 3]
+  2021: Carlos Alcaraz         (actual: Novak Djokovic)  [TOP 3]
+  2022: Carlos Alcaraz         (actual: Rafael Nadal)  [MISSED]
+  2023: Carlos Alcaraz         (actual: Novak Djokovic)  [TOP 3]
+  2024: Carlos Alcaraz         (actual: Carlos Alcaraz)  [CORRECT]
+  2025: Carlos Alcaraz         (actual: Carlos Alcaraz)  [CORRECT]
+
+  Exact: 3/11  Top-3: 9/11
